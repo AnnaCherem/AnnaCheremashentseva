@@ -5,14 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 3 challenges</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <style>
-
-    p {
+   p {
         color: red;
     }
-</style>
+    .exciting {
+   background: #f69d3c;
+   border: 1px solid #696969;
+   padding: 10px;
+  }
+  <!--змінили # на . -->
+   
+  body {
+        background: var(--bgColor);
+        }
+
+        div {
+        --bgColor: limegreen;
+        }
+        p {
+        background: var(--bgColor);
+        }
+
+        /*
+        визначте для елементів p властивість фону таким чином:
+        background: var(--bgColor);
+        */
+    </style>
 <body>
     <h2>Сторінка Вікіпедії для мови CSS</h2>
     <iframe src="https://uk.wikipedia.org/wiki/CSS" title="Сторінка Вікіпедії для мови CSS"></iframe>
@@ -23,6 +44,17 @@
     <p class="exciting">The most exciting paragraph on the page. One of a kind!</p>
     <div class="exciting">The most exciting paragraph on the page. One of a kind!</div>
     <!-- замість id поставили class-->
-    
+
+    <div>
+    <h3>Div 1</h3>
+        <p>Paragraph 1</p>
+    </div>
+
+    <div>
+    <h3>Div 2</h3>
+        <p>Paragraph 2</p>
+    </div>
+
+
 </body>
 </html>
