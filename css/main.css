@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url("https://kit.fontawesome.com/d262357d1a.js");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 html {
       --primary-text-color: #000;
@@ -13,4 +14,19 @@ footer {
 body {
       color: var(--primary-text-color);
       background: var(--primary-bg-color);
+}
+h1,
+h2,
+h3 {
+      font-weight: 700;
+}
+h2 {
+      font-size: 1.3rem;
+}
+.list-unstyled {
+      list-style: none;
+}
+.footer-social {
+      padding: 16px;
+      color: blue;
 }
