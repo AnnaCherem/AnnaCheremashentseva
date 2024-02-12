@@ -43,6 +43,7 @@ div + p {
 
 .translucent-box {
     background-color: hsl(0, 100%, 50%);
+}
 
     html {
         font-size: 100% ;

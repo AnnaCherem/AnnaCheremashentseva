@@ -1,3 +1,16 @@
-body {color: var(--primary-text-color);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+
+html {
+      --primary-text-color: #000;
+      --primary-bg-color: #fff;
+}
+
+footer {
+      --footer-text-color: #fff;
+      --fuuter-bg-color: #000;
+}
+
+body {
+      color: var(--primary-text-color);
       background: var(--primary-bg-color);
 }
