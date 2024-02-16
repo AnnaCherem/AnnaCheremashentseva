@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        .negative {
+          background: linear-gradient(to left, 
+            #87CEEB -50%,   
+            #6495ED -10%,   
+            #0000FF 0%,    
+            #0000FF 100%,  
+            #000080 150%   
+          );
+        }
+        .percents {
+      background: linear-gradient(to bottom, 
+        #8FED92 2em,   
+        #61CA6F 4em,   
+        #228B22 8em,  
+        #228B22 16em, 
+        #006400 32em, 
+        #006400 64em,  
+        #004400 128em 
+      );
+    }
+    .radial {
+      background: 
+        radial-gradient(ellipse at center, 
+          orange, transparent),
+        radial-gradient(ellipse at center, 
+          red, transparent);
+      background-repeat: no-repeat;
+    }
+      </style>
+      
+</head>
+
+<body class="body">
+    
+    <h1>Gradient Text Glow</h1>
+
+    <div class="percents">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="negative">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="radial">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+    <!--Прямокутник 100*100-->
+    <svg width="140" height="140" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="20" width="100" height="100" fill="lightgray" />
+      <rect x="20" y="20" width="100" height="100" fill="transparent" stroke="#1c87c9" stroke-width="4" />
+    </svg>
+    <!--КОЛО-->
+    <svg xmlns="http://www.w3.org/2000/svg" width="202" height="202" viewBox="0 0 202 202" fill="none">
+      <circle cx="101" cy="101" r="98" transform="rotate(-60 101 101)" fill="#D9D9D9" stroke="#F21313" stroke-width="4"/>
+      </svg>
+  
+      <!-- годинник-->
+      <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="yellow" stroke="black" stroke-width="10" />
+      <!-- Стрілка годинникa хвилини-->
+        <line x1="100" y1="100" x2="100" y2="40" stroke="black" stroke-width="4" />
+          <!-- Мітка хвилин -->
+          <text x="95" y="30" font-family="Arial" font-size="16" fill="black">12</text>
+       <!-- Стрілка годинникa годинна-->
+          <line x1="100" y1="100" x2="140" y2="100" stroke="black" stroke-width="4" />
+        <!-- Мітка годин 3 -->
+          <text x="175" y="105" font-family="Arial" font-size="16" fill="black">3</text>
+        </svg>
+        
+        <!-- зірка семікінцева заблюрена, створена на Figma-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 500 487" fill="none">
+<!--шлях згенерований-->
+            <path d="M250 5L291.432 168.965L445.458 99.1275L343.097 233.751L493.732 310.63L324.658 314.538L358.471 480.242L250 350.492L141.529 480.242L175.342 314.538L6.26802 310.63L156.903 233.751L54.5421 99.1275L208.568 168.965L250 5Z" fill="url(#paint0_linear_616_11)"/>
+<path d="M250 5L291.432 168.965L445.458 99.1275L343.097 233.751L493.732 310.63L324.658 314.538L358.471 480.242L250 350.492L141.529 480.242L175.342 314.538L6.26802 310.63L156.903 233.751L54.5421 99.1275L208.568 168.965L250 5Z" stroke="#5551FF" stroke-width="7"/>
+<defs>
+  <filter id="filter0_f_616_11" x="0.676971" y="0.142578" width="300" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+  <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_616_11"/>
+  </filter>
+  <linearGradient id="paint0_linear_616_11" x1="250" y1="5" x2="250" y2="505" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#D9D9D9"/>
+  <stop offset="0.0001" stop-color="#FF00FF"/>
+  <stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+  </linearGradient>
+  </defs>   
+</svg>
+    </body>
+</html>
