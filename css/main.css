@@ -1,4 +1,5 @@
 /*Lecture-5 пункт 7. Виконайте імпорт шрифтів font-awesomeза допомогою правила @import.*/
+/* Я думаю ,що js не вважається помилкою?*/
 @import url("https://kit.fontawesome.com/d262357d1a.js");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 /*Lecture-5 пункт 9. Встановити, за допомогою визначених у файлі css/common.css змінних, властивості елемента body:
