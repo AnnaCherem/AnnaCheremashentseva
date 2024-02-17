@@ -26,13 +26,13 @@ section p {
 body > h2:first-of-type {
     color: indigo;
 }
-
-p.first {
+<!--застосувати до всіх посилань, нащадкам p.first властивість color green-->
+p.first a{
     color: green;
 }
 
 p.first {
-    font-size: calc();
+    font-size: calc;
     text-decoration: dotted;
     font-style: oblique;
 }

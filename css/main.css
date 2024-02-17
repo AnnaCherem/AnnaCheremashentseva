@@ -1,6 +1,10 @@
+/*Lecture-5 пункт 7. Виконайте імпорт шрифтів font-awesomeза допомогою правила @import.*/
 @import url("https://kit.fontawesome.com/d262357d1a.js");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
+/*Lecture-5 пункт 9. Встановити, за допомогою визначених у файлі css/common.css змінних, властивості елемента body:
+font-family
+font-size*/
+@import url(common.css);
 html {
       --primary-text-color: #000;
       --primary-bg-color: #fff;
@@ -14,6 +18,9 @@ footer {
 body {
       color: var(--primary-text-color);
       background: var(--primary-bg-color);
+      /*Lecture-5 пункт 9. Встановити, за допомогою визначених у файлі css/common.css змінних, властивості елемента body:
+font-family
+font-size*/
       font-family:sans-serif;
       font-size: 0.875rem;
      
