@@ -12,7 +12,7 @@ footer {
 --footer-text-color: #fff;
 --fuuter-bg-color: #000;
 }
-/*Lecture-5 пункт11.Встановіть для тега a властивість text-decoration: none; у файлі css/common.css
+/*Lecture-5 пункт11.Встановіть для тега a властивість text-decoration: none; у файлі css/common.css*/
 nav > a {
     text-decoration: none;
 }
