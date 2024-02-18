@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 	<style>
-	.box{ 
+	/*Пункт 1. Перепишіть властивості padding та margin за допомогою скороченого синтаксу
+    .box{ 
 		padding-top:    10px; 
 		padding-right:  20px; 
 		padding-bottom: 25px; 
@@ -15,17 +16,141 @@
 		margin-right:  20px; 
 		margin-bottom: 25px; 
 		margin-left:   20px;  
-
-	}
-    <!--Перепишіть властивості padding та margin за допомогою скороченого синтаксу
+}*/
+    
     .box {
-    padding: 10px 20px 25px 20px;
+    padding: 10px 20px 25px;
     margin: 25px 20px;
-}-->
+    }
 
-	</style>
+ /*Пункт 2. Обчислити ширину елемента .box
+
+1 спосіб(з інтернету) Щоб обчислити ширину елемента,треба дізнатись ширину контенту, 
+Ширина контенту = 300px - (10px + 10px) - (2px + 2px) = 276px
+щоб знайти загальну ширину елемента,треба додати до ширини контенту падінги та бордери (ліві та праві)
+Ширина елемента = 276px + 10px + 10px + 2px + 2px = 300px
+
+2спосіб (з презентації) Ширина елемента = 300px+10px+10px+2px+2px=324*/
+
+    .box{ 
+  width: 300px; 
+  padding: 10px; 
+  border: dashed 2px green;
+}
+
+/*Пункт 3. Обчислити ширину і висоту елемента .first-box
+
+  1 спосіб(з інтернету). Щоб обчислити ширину елемента,треба дізнатись ширину контенту, 
+  Ширина контенту = 200px - (20px + 20px) - (8px + 8px) = 144px
+Ширина елемента = 144px + 20px + 20px + 8px + 8px = 200px
+
+Висота контенту = 100px - (20px + 20px) - (8px + 8px) = 44px
+Висота елемента = 44px + 20px + 20px + 8px + 8px = 100px
+
+2спосіб (з презентації) Ширина елемента = 200px+8px+8px+20px+20px=256    
+                        Висота елемента = 100px+8px+8px+20px+20px=156*/
+.first-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+  
+}
+  
+/*Пункт 4. Обчислити ширину і висоту елемента .second-box
+
+1 спосіб(з інтернету). Щоб обчислити ширину елемента,треба дізнатись ширину контенту,.
+Ширина контенту = 200px - (0px + 0px) - (8px + 8px) = 184px
+Ширина елемента = 184px + 0px + 0px + 8px + 8px = 200px
+
+Висота контенту = 100px - (0px + 0px) - (8px + 8px) = 84px
+Висота елемента = 84px + 0px + 0px + 8px + 8px = 100px
+
+2спосіб (з презентації)Ширина елемента = 200px+8px+8px+0px+0px=216   
+                        Висота елемента = 100px+8px+8px+0px+0px=116*/
+
+.second-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  background: yellow;
+}
+
+/*Пункт 5. Обчислити ширину елемента div
+1 спосіб(з інтернету) обчислюємо лише ширину елемента контента,тому що властивість box-sizing встановлена на значення content-box.
+Ширина контенту = 200px - (20px + 20px) - (8px + 8px) = 136px
+Ширина елемента = 136px + 20px + 20px + 8px + 8px = 192px
+
+2спосіб (з презентації)Ширина елемента = 200px+8px+8px+20px+20px=256*/
+div{
+  box-sizing:content-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+
+/*Пункт 6. Обчислити ширину контенту елемента div
+Ширина контенту = 200px - (20px + 20px) - (8px + 8px) = 144px*/
+
+div{
+  box-sizing:border-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+
+/*Пункт 7.*/
+div {
+    border: 10px dotted black;
+    padding: 15px;
+    background-color: lightblue;
+  }
+  #example1 {
+    background-clip: border-box;
+  }
+  #example2 {
+    background-clip: padding-box;
+  }
+  #exemple3 {
+    background-clip: content-box;
+  }
+  /*пункт 8. */
+  
+  h1 {
+    display: inline-block;
+    width: min-content;
+}
+
+h1 span {
+  display: inline-block;
+}
+  </style>
 </head>
 <body>
-   <div class="box"></div>
+   
+    <div class="box"></div>
+   <div class="first-box"></div>
+   <body>
+    <div class="second-box"></div>
+<!--Пункт 7.-->
+<div id="example1">
+    <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+  </div>
+
+  <div id="example2">
+    <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+  </div>
+
+  <div id="example3">
+    <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+  </div>
+
+  <!--Пункт 8. Є заголовок з властивістю display: inline-block, який потрібно розбити на два рядки. Його ширина має бути динамічною.
+<h1><span>Awesome article</span></h1><h1>-->
+  <h1><span>Awesome</span> <span>article</span></h1>
+
 </body>
 </html>
