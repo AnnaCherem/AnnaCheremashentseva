@@ -45,13 +45,56 @@ p.first {
 div + p { 
     color: salmon;
 }
+ /*Маємо іменовані кольори black, blue, green, red, white, yellow
+
+ Шістнадцятковий код:
+Black: #000000
+Blue: #0000FF
+Green: #008000
+Red: #FF0000
+White: #FFFFFF
+Yellow: #FFFF00
+
+визначати ці кольори у десятковій системі числення за допомогою функції RGB
+Black: RGB(0, 0, 0)
+Blue: RGB(0, 0, 255)
+Green: RGB(0, 128, 0)
+Red: RGB(255, 0, 0)
+White: RGB(255, 255, 255)
+Yellow: RGB(255, 255, 0)
+
+визначати ці кольори, використовуючи відсотки.
+Black: RGB(0%, 0%, 0%)
+Blue: RGB(0%, 0%, 100%)
+Green: RGB(0%, 50%, 0%)
+Red: RGB(100%, 0%, 0%)
+White: RGB(100%, 100%, 100%)
+Yellow: RGB(100%, 100%, 0%)
+
+визначати ці кольори використовуючи альфа-канал, що задає прозорість.
+Black: RGBA(0, 0, 0, 1)
+Blue: RGBA(0, 0, 255, 1)
+Green: RGBA(0, 128, 0, 1)
+Red: RGBA(255, 0, 0, 1)
+White: RGBA(255, 255, 255, 1)
+Yellow: RGBA(255, 255, 0, 1)
+
+*/
 
 .translucent-box {
     background-color: hsl(0, 100%, 50%);
 }
 
-    html {
-        font-size: 100% ;
+    
+html {
+    font-size: 100%; 
 }
-
+  
+  body {
+    font-size: 140%; 
+  }
+  
+  h1 {
+    font-size: 240%; 
+  }
 
