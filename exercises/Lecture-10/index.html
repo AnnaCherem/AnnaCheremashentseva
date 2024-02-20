@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <style>
+        
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 700px;
+        }
+
+        .item-blue {
+            background-color: blue;
+            flex-grow: 3;/*(завдання 1.пункт 2.) Встановіть для елемента blue фактор зростання 3*/
+        }
+        .item-orange {
+            background-color:orange;    
+        }
+        .item-green {
+            background-color:green;
+            flex-grow: 1; /*(завдання1.пункт 3.)Встановіть для елемента green фактор зростання 1*/
+        }
+/*(завдання 1.пункт 4)Розрахуйте в пікселях ширину кожного з елементів item-green, item-orange, item-blue
+0,3333*700px-7рх=226.31px має кожен єлемент*/
+       
+.item {
+           /*завдання 1.пункт 1.
+            flex-grow: 1;/*розподіл простору*/
+            color: white;
+            width: 100px;
+           /*flex-basis: calc(33.33% - 7px); /* Встановлюємо flex-basis для визначення однакової ширини*/
+           /*margin:6px;/*відступ між елементами*/
+        }
+
+        /*завдання 2*/
+        .navbar {
+            display: flex;
+            align-items: center;/*вирівнює елементи*/
+            justify-content: space-between;
+            background-color: #ecaeae;
+            padding: 10px;
+            margin-top: 10px;/*відстань зверху*/
+            margin-bottom: 10px;/*відстань знизу*/
+}
+.brand-name {
+    order: -1;/*змінюємо порядок та розташовуємо зліва*/
+}
+.nav-menu {
+    display: flex;
+    gap: 15px;/*між пунктами*/
+}
+.nav-item {
+    list-style: none;
+}
+/*завдання 3*/
+:root {
+            --min: 200px; /* Базовий розмір */
+}
+.layout {
+            display: flex;
+            gap: 10px;
+        }
+
+.card {
+            flex-grow: 1; /* пропорційно ділять між собою весь доступний простір */
+            flex-basis: var(--min); /* Базовий розмір */
+            background-color: rgb(205, 229, 157);
+            padding: 10px;
+            box-sizing: border-box;
+}
+    </style>
+
+</head>
+<body>
+    <h2>CSS Flex Property</h2>
+    <div class="wrapper">
+        <div class="item item-blue">CSS</div>
+        <div class="item item-orange">Flex</div>
+        <div class="item item-green">Property</div>
+    </div>
+    <!--Завдання 2.-->
+    <div class="navbar">
+    <div class="brand-name">Brand Name</div>
+    <ul class="nav-menu">
+        <li class="nav-item">+</li>
+        <li class="nav-item">++</li>
+        <li class="nav-item">+++</li>
+    </ul>
+    </div>
+    <!--Завдання 3.-->
+    <div class="layout">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
