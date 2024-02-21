@@ -1,0 +1,18 @@
+/*завдання 2*/
+.navbar {
+    display: flex;
+    align-items: center;/*вирівнює елементи*/
+    justify-content: space-between;
+    background-color: #ecaeae;
+    padding: 10px;
+    margin-top: 10px;/*відстань зверху*/
+    margin-bottom: 10px;/*відстань знизу*/
+}
+.brand-name {
+order: -1;/*змінюємо порядок та розташовуємо зліва*/
+}
+.nav-menu {
+display: flex;
+gap: 15px;/*між пунктами*/
+list-style: none;
+}

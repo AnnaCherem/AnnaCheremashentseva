@@ -1,0 +1,16 @@
+/*завдання 3*/
+:root {
+    --min: 200px; /* Базовий розмір */
+}
+.layout {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    flex-grow: 1; /* пропорційно ділять між собою весь доступний простір */
+    flex-basis: var(--min); /* Базовий розмір */
+    background-color: rgb(205, 229, 157);
+    padding: 10px;
+    box-sizing: border-box;
+}
