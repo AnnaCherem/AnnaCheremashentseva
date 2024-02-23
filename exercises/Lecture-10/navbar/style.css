@@ -1,18 +1,53 @@
-/*завдання 2*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  /*завдання2 (2 варіант)
 .navbar {
     display: flex;
-    align-items: center;/*вирівнює елементи*/
+    align-items: center;/*вирівнює елементи
     justify-content: space-between;
     background-color: #ecaeae;
     padding: 10px;
-    margin-top: 10px;/*відстань зверху*/
-    margin-bottom: 10px;/*відстань знизу*/
+    margin-top: 10px;/*відстань зверху
+    margin-bottom: 10px;/*відстань знизу
 }
 .brand-name {
-order: -1;/*змінюємо порядок та розташовуємо зліва*/
+order: -1;/*змінюємо порядок та розташовуємо зліва
 }
 .nav-menu {
 display: flex;
-gap: 15px;/*між пунктами*/
+gap: 15px;/*між пунктами
 list-style: none;
-}
+}*/
+/* завдання 2 (1 варіант)*/
+  .nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;/*вирівнює елементи*/
+    justify-content: space-between;/*по горизонталі*/
+    padding:  0.5rem;
+  }
+  
+  .link-list {
+    display: flex;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .link {
+    padding: 0.5rem;
+  }
+  
+  .link:hover {
+    background-color: #777;
+  }
+  
+  .link a {
+    color: inherit;
+    text-decoration: none;
+  }

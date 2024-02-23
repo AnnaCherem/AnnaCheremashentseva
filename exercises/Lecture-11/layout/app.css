@@ -1,0 +1,43 @@
+/*завдання 2 (1 спосіб)*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+header {
+    grid-column: 3;
+  }
+  
+  main {
+    grid-column:2;
+  }
+  
+  footer {
+    grid-column: 3;
+  }
+  /*завдання 2 (2 спосіб)
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "main main sidebar"
+        "footer footer footer";
+    grid-gap: 20px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}*/

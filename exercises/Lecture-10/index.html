@@ -39,43 +39,6 @@
            /*flex-basis: calc(33.33% - 7px); /* Встановлюємо flex-basis для визначення однакової ширини*/
            /*margin:6px;/*відступ між елементами*/
         }
-
-        /*завдання 2*/
-        .navbar {
-            display: flex;
-            align-items: center;/*вирівнює елементи*/
-            justify-content: space-between;
-            background-color: #ecaeae;
-            padding: 10px;
-            margin-top: 10px;/*відстань зверху*/
-            margin-bottom: 10px;/*відстань знизу*/
-}
-.brand-name {
-    order: -1;/*змінюємо порядок та розташовуємо зліва*/
-}
-.nav-menu {
-    display: flex;
-    gap: 15px;/*між пунктами*/
-}
-.nav-item {
-    list-style: none;
-}
-/*завдання 3*/
-:root {
-            --min: 200px; /* Базовий розмір */
-}
-.layout {
-            display: flex;
-            gap: 10px;
-        }
-
-.card {
-            flex-grow: 1; /* пропорційно ділять між собою весь доступний простір */
-            flex-basis: var(--min); /* Базовий розмір */
-            background-color: rgb(205, 229, 157);
-            padding: 10px;
-            box-sizing: border-box;
-}
     </style>
 
 </head>
@@ -86,22 +49,5 @@
         <div class="item item-orange">Flex</div>
         <div class="item item-green">Property</div>
     </div>
-    <!--Завдання 2.-->
-    <div class="navbar">
-    <div class="brand-name">Brand Name</div>
-    <ul class="nav-menu">
-        <li class="nav-item">Home</li>
-        <li class="nav-item">Catalog</li>
-        <li class="nav-item">Blog</li>
-        <li class="nav-item">About</li>
-        <li class="nav-item">Contact</li>
-    </ul>
-    </div>
-    <!--Завдання 3.-->
-    <div class="layout">
-        <div class="card">Card 1</div>
-        <div class="card">Card 2</div>
-        <div class="card">Card 3</div>
-    </div>
 </body>
-</html>
+   

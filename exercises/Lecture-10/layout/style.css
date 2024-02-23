@@ -1,16 +1,19 @@
-/*завдання 3*/
-:root {
-    --min: 200px; /* Базовий розмір */
-}
-.layout {
+body {
+    --padding: 5vw;
+    --max-width: 180ch;
+  }
+  
+  .flexbox {
+    --min: 30ch;
+  
     display: flex;
-    gap: 10px;
-}
-
-.card {
-    flex-grow: 1; /* пропорційно ділять між собою весь доступний простір */
-    flex-basis: var(--min); /* Базовий розмір */
-    background-color: rgb(205, 229, 157);
-    padding: 10px;
-    box-sizing: border-box;
+    flex-wrap: wrap;
+  
+    gap: 1rem;
+  }
+  /*завдання 3*/
+  .card {
+    flex: 1;
+    min-width: var(--min); 
+    margin: 0.5rem;
 }

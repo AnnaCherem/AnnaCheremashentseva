@@ -1,0 +1,18 @@
+/*завдання 3 ,вимоги для мене дуже заплутані*/
+.grid {
+    --min: 30ch;
+    --max: 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--min), var(--max)));
+    gap: 1rem;
+}
+
+body {
+    --padding: 5vw;
+    --max-width: 180ch;
+    margin: 0; /* весь розмір екрану */
+}
+.card {
+    min-width: var(--min);
+    max-width: 1fr;
+}
