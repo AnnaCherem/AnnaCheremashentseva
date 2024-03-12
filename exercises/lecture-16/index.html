@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Hello, javascript!</h1>
+
+    <script>
+        //Завдання 1. В середині script визначте 2 змінні message1 зі значенням Hello та message2 зі значенням JavaScript. Використовуючи ці змінні та alert, виконайте відображення рядка "Hello JavaScript!".
+        var message1 = "Hello";
+        var message2 = "JavaScript";
+        var combinedMessage = message1 + " " + message2 + "!";
+        alert(combinedMessage);
+    </script>
+ <!--Завдання 2.Виправити помилку у коді
+<script>
+      'use strict';
+       message = hello;
+      message = 123456;
+</script>-->
+ 
+ <script>
+    //Відповідь на завдання 2
+ 'use strict';
+        var message; // треба оголосити змінну message
+        message = 'hello'; // літери взяти в лапки 
+        console.log(message);//для перевірки
+        message = 123456;
+        console.log(message);//для перевірки
+</script>
+
+<script>
+// Завдання 3. Запитуємо у користувача значення для x та y
+let x = prompt("Введіть значення для x:", "");
+let y = prompt("Введіть значення для y:", "");
+
+// Перетворює значення на числа
+x = parseFloat(x);
+y = parseFloat(y);
+
+// Обчислює суму 
+let sum = x + y;
+
+// Виводе результат
+console.log(`Сума ${x} та ${y} дорівнює: ${sum}`);
+</script>
+
+<!--Завдання 4.Виправити помилку у коді
+
+<script>
+  'use strict';
+
+  let a = 9007199254740991;
+  let b = 9007199254740991n;
+  console.log(a + b); 
+  // Uncaught TypeError: can't convert BigInt to number
+</script>-->
+
+<script>
+// Відповідь на завдання 4 - у двох змінних потрібен бути тип BigInt
+'use strict';
+  let a = 9007199254740991n; // перетворює a в BigInt
+  let b = 9007199254740991n;
+  console.log(a + b); // виводе правильний результат
+</script>
+
+
+<script>
+    //Завдання 5. Перепишіть код так, щоб результат дорівнював 5
+    'use strict';
+
+   let apples = "2";
+   let oranges = "3";
+   //alert( apples + oranges );не вірно ,змінюємо його
+   
+/*Варіант 1. Використовуємо Number для перетворення рядкового значення в цифри
+  alert( Number(apples) + Number(oranges) ); */
+
+/*Варіант 2. Використовуємо parseFloat для перетворення рядкового значення в цифри */
+alert( parseFloat(apples) + parseFloat(oranges) )
+</script>
+
+<script>
+    //Завдання 6 відповідь a,b,c=2 d=1
+    //'use strict'; 
+   // let a = 1, b = 1;
+   // let c = ++a; // ?
+    //let d = b++; // ?
+</script>
+
+
+  <script>
+    //Завдання 7 відповідь a=4 х=5
+   //'use strict';
+   // let a = 2;
+   // let x = 1 + (a *= 2);
+  </script>
+  
+  <script>
+    //Завдання 8.
+    'use strict';
+
+    "" + 1 + 0//"10"
+    "" - 1 + 0//-1
+    true + false//1 (true конвертується в 1, false - в 0)
+    6 / "3"//2
+    "2" * "3"//6
+    4 + 5 + "px"//"9px"
+    "$" + 4 + 5//$45
+    "4" - 2//2
+    "4px" - 2//NaN (відняти не можливо, "4px" не може бути конвертований в число).
+    "  -9  " + 5//"-95"
+    "  -9  " - 5//-14
+    null + 1//1 (null конвертується в 0).
+    undefined + 1//NaN (undefined не може бути перетворений в число).
+    NaN + 1//NaN (будь-яке додавання з NaN дає NaN)
+  </script>
+
+<script>//Завдання 9
+    'use strict';
+    // скоротити цей код за допомогою операторів += і *=:
+    let n = 2;
+    n = n + 5;
+    n = n * 2;
+</script>
+<!--Відповідь
+    'use strict';
+
+    let n = 2;
+    n += 5; // замість n = n + 5;
+    n *= 2; // замість n = n * 2;
+-->
+<script>
+//Завдання 10
+    let n1 = "   123   ";
+    let n2 = "123z";
+    let n3 = true;
+    let n4 = false;
+    
+    console.log(n1, n2, n3, n4);
+    // Перетворити змінні n1, n2, n3, n4 на числа 
+</script>
+<script>
+// Перетворення рядків в числа:
+    n1 = parseFloat(n1.trim());
+    n2 = parseFloat(n2);
+
+    // Перетворення булевих значень в числа:
+    n3 = Number(n3);
+    n4 = Number(n4);
+
+    console.log(n1, n2, n3, n4);
+</script>
+</body>
+</html>
