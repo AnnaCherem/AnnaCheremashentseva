@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+   
+  <script>
+     'use strict'
+//Завдання 2
+  let x = 3
+  let y = 4
+
+  x == 3//true
+  x === "3"//false
+  x!=5//true
+  x!== "5"//true
+  X!== 3//буде помилка ,тому що Х велика
+  y > 5//false
+  y >= 3//true
+  y < 5//true
+  y <= 2//false
+  1 == true//true
+  null == undefined//true
+  NaN == NaN//false
+
+//Завдання 2
+ /* let x = 3;
+let y = 4;
+let z = 5;*/
+
+x ||= y;//3      (залишається 3 ,так як має значення 3 та не перетворюється в false)
+x || (y = z);//3 (залишається 3 ,так як має значення 3 та не перетворюється в false)
+x &&= y;//4      (означає, що x буде присвоєно значення y,так як обидва x і y перетворюються в true)
+x && (y = z);//5 (означає, що x буде присвоєно значення y,так як обидва x і (y=z) перетворюються в true, а "у" присвоюється значення "z")
+x ??= y;//3      (присвоює значення y змінній x, якщо x є null або undefined, у цьому випадку "х" залишається 3)
+x ?? (y = z);//3 (присвоює значення (y=z) змінній x, якщо x є null або undefined, у цьому випадку "х" залишається 3)
+
+//Завдання 3
+function guessNumber() {
+    let number = parseInt(prompt("Guess the number:")); // Запит на введення числа від користувача
+
+    if (number === 3) { // Якщо число вгадане
+        alert("Congratulations, You did it!");
+    } else if (number > 3) { // Якщо число більше 3
+        alert("The number is too long");
+    } else { // Якщо число менше 3
+        alert("The number is short");
+    }
+}
+guessNumber();
+
+//Завдання 4 пункт 1.
+function checkDayOfWeek(day) {
+    const day = prompt("Enter the day of the week: ").toLowerCase();
+    if (day === "Понеділок" || day.toLowerCase() === "monday") {
+        alert("Start of the work week!");
+    } else if (day === "П'ятниця" || day.toLowerCase() === "friday") {
+        alert("End of the work week!");
+    } else {
+        alert("A regular day");
+    }
+}
+checkDayOfWeek(inputDay);
+
+//Завдання 4 пункт 2.
+function checkDayOfWeek(day)  {
+    const day = prompt("Enter the day of the week: ").toLowerCase();
+    switch (day.toLowerCase()) {
+        case "понеділок":
+        case "monday":
+            alert("Start of the work week!");
+            break;
+        case "п'ятниця":
+        case "friday":
+            alert("End of the work week!");
+            break;
+        default:
+            alert("A regular day");
+    }
+}
+let inputDay = prompt("Введіть назву дня тижня:");
+checkDayOfWeek(inputDay);
+
+//Завдання 5 пункт 1.
+const score = parseFloat(prompt("Введіть кількість балів:"));
+
+let grade;
+
+if (score < 50) {
+    grade = 'F';
+} else if (score < 70) {
+    grade = 'D';
+} else if (score < 80) {
+    grade = 'C';
+} else if (score < 90) {
+    grade = 'B';
+} else {
+    grade = 'A';//В іншому випадку призначити йому ступінь 'A'
+}
+
+alert(`Ступінь студента: ${grade}`);//всі grade які пройшли по балам
+
+//Завдання 5 пункт 2.
+/*const score = parseFloat(prompt("Введіть кількість балів:"));
+
+const grade = score < 50 ? 'F' :
+              score < 70 ? 'D' :
+              score < 80 ? 'C' :
+              score < 90 ? 'B' : 'A';
+
+alert(`Ступінь студента: ${grade}`);*/
+
+/*Завдання 6
+Виправити помилку у наступному коді:
+let firstName = null;
+let lastName = undefined;
+let username = firstName || lastName ?? "Guest";
+
+console.log(username); // "Guest"*/
+//Завдання 6
+let firstName = null;
+let lastName = undefined;
+let username = firstName ?? lastName ?? "Guest";//1варіант
+//let username = firstName || (lastName ?? "Guest");//2варіант
+console.log(username); // "Guest"
+
+  </script>
+
+</body>
+</html>
