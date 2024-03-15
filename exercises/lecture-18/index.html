@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+
+  - функція checkAge повертає true, якщо параметр age перевищує 18.
+  - в іншому випадку запитує підтвердження та повертає результат:
+    
+    <script>
+    function checkAge(age) {
+      if (age > 18) {
+        return true;
+      } 
+        // Завдання 2.1 якщо умова If виконується ,то повертається true,якщо не виконується то переходить до confirm та повертає результат незалежно чи є else чи не має...
+        return confirm('Did parents allow you?');
+
+    }
+
+    function checkAge(age) { // Завдання 2
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Did parents allow you?');
+  }
+}
+
+function checkAge(age) {  // Завдання 2.1. Перепишіть функцію checkAge, використовуючи '?'
+  return age > 18 ? true : confirm('Did parents allow you?');
+}
+function checkAge(age) {  // Завдання 2.2. Перепишіть функцію checkAge, використовуючи '||'
+  return age > 18 || confirm('Did parents allow you?');
+}
+return (age > 18) || confirm('Did parents allow you?'); // Завдання 3. Дужки не потрібні навколо  age > 18, використовуються тількт для читабельності
+
+function min(a, b) { // Завдання 4.
+  if (a < b) {
+    return a;
+  } else if (a > b) {
+    return b;
+  } else {
+    return undefined;
+  }
+}
+
+function min(a, b) { // Завдання 4.1.
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+
+function min(a, b) {  // Завдання 4.2.
+  return a < b ? a : b;
+}
+
+function pow(x, n) {  // Завдання 5.
+    if (n < 1 || !Number.isInteger(n)) {
+        return "Параметр 'n' має бути наткральним цілим числом від 1";
+    }
+    
+    let result = 1;
+    for (let i = 0; i < n; i++) {
+        result *= x;
+    }
+    return result;
+}
+
+let x = parseFloat(prompt("Введіть число x:"));
+let n = parseInt(prompt("Введіть натуральне число n:"));
+
+let output;
+if (!isNaN(x) && !isNaN(n)) {
+    output = pow(x, n);
+} else {
+    output = "Некоректні вхідні дані. Будь ласка, введіть числа.";
+}
+
+console.log(output);
+
+
+// Завдання 6.
+const ask = (question, yes, no) => {
+  if (confirm(question)) yes();
+  else no();
+};
+
+const yes = () => {
+  alert("Погодитися.");
+};
+
+const no = () => {
+  alert("Скасувати.");
+};
+
+ask("Згоден?", yes, no);
+ 
+// Завдання 7
+const yesFunc = () => {
+  alert("Погодитися");
+};
+
+const noFunc = () => {
+  alert("Скасувати");
+};
+
+ask("Згоден?", yesFunc, noFunc);
+
+// Завдання 8.1
+function A() { 
+    console.log('A was called'); 
+    return undefined; }
+function B() {
+     console.log('B was called'); 
+     return false; }
+function C() { 
+    console.log('C was called'); 
+    return "foo"; }
+
+A();
+C();
+// 8.2
+console.log(B(), C());
+    </script>
+
+
+</body>
+</html>
