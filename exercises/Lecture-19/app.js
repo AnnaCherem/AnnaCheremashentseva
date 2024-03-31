@@ -50,7 +50,7 @@ let lastName = "Cat";
 
 function getFullName(firstName, lastName) {
     return firstName + " " + lastName; // варіант 1 об'єднуємо рядки
-    return `${firstName} ${lastName}`; // варіант 2
+   // return `${firstName} ${lastName}`; // варіант 2 неактивований (виправила)
 }
 
 let fullName = getFullName("Tom", "Cat");
@@ -82,7 +82,7 @@ function greeting(name) {
 console.log(greeting("Tom Cat"));
 
 // Завдання 11
-let string1 = "  The name of our game  ";
+/*let string1 = "  The name of our game  ";
 
 let result1 = string1.trim();
 
@@ -99,7 +99,19 @@ const phoneNumber = "\t  555-123\n ";
 let result4 = phoneNumber.replace(/\s/g, "");
 
 console.log(result4);
-console.log(phoneNumber); 
+console.log(phoneNumber); */
+
+//Завдання 11 виправлене
+
+let string1 = "  The name of our game  ";
+console.log(string1.trim());//видалення пробілів з двох сторін
+console.log(string1.trimStart());//видалення пробілів з кінця
+console.log(string1.trimEnd());////видалення пробілів з початку
+
+const phoneNumber = '\t  555-123\n ';
+console.log(phoneNumber.trim());// Видалити пробіли з початку та t
+console.log(phoneNumber.trimStart());
+console.log(phoneNumber.trimEnd());
 
 // Завдання 12
 let sentence = 'Always look on the bright side of life';
@@ -119,11 +131,21 @@ if (sentence.includes('look on')) {
 }
 
 // Перевірка, чи містить рядок значення 'look on' починаючи з 8-ї позиції
-if (sentence.substr(8).includes('look on')) {
+
+/*if (sentence.indexOf('look on', 8) !== -1) {
+    console.log('Рядок містить "look on" починаючи з 8-ї позиції');
+    } else {
+    console.log('Рядок НЕ містить "look on" починаючи з 8-ї позиції');
+    }*/
+
+//виправила
+// Перевірка, чи містить рядок значення 'look on' починаючи з 8-ї позиції
+if (sentence.indexOf('look on', 8) !== -1) {
     console.log('Рядок містить "look on" починаючи з 8-ї позиції');
 } else {
     console.log('Рядок НЕ містить "look on" починаючи з 8-ї позиції');
 }
+
 
 // Завдання 13
 //let sentence = 'Always look on the bright side of life';
@@ -137,8 +159,8 @@ let index2 = sentence.indexOf('l', 3);
 console.log("Індекс символу 'l', починаючи з 3-ї позиції:", index2);
 
 // Знайти індекс символу 'L'
-let index3 = sentence.toLowerCase().indexOf('l');
-console.log("Індекс символу 'L':", index3);
+let indexOfL = sentence.indexOf('L');
+console.log(indexOfL); // Виправила
 
 // Завдання 14
 //let sentence = 'Always look on the bright side of life';
@@ -148,7 +170,7 @@ let subString1 = sentence.substring(6);
 console.log(subString1);
 
 // Отримати підрядок 'Always'
-let subString2 = sentence.substring(0, 6);
+let subString2 = sentence.substring(0, 7);//виправила
 console.log(subString2);
 
 // Отримати підрядок 'look'
@@ -162,7 +184,7 @@ let usernameRegex = /^[a-z0-9_-]{8,16}$/;
 //{8,16}: Кількість символів від 8 до 16.
 //$: Кінець рядка.
 
-// Завдання 17
+// Завдання 16
 let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 //^: Початок рядка.
 //Починається з будь-якого символу, що не є пробілом або символом '@'.
@@ -171,27 +193,19 @@ let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 //Потім символ '.'
 //Після цього має наступити послідовність символів, що не є пробілами або символами '@', що складають кінцевий домен (наприклад, 'com').
 
-// Завдання 16
+// Завдання 17
 
 //let sentence = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Morbi in sapien eu velit eleifend ullamcorper eget vitae nulla. Aenean euismod purus sed neque dictum, nec lobortis ante faucibus.';
 
-// Використання методу substring
+// Використання методу substring (виправлено)
 function truncateTextUsingSubstring(text) {
-    if (text.length <= 50) {
-        return text;
-    } else {
-        return text.substring(0, 50) + '...';
-    }
+    return text.length > 50 ? text.substring(0, 50) + '...' : text;
 }
-
-// Використання методу substr
-function truncateTextUsingSubstr(text) {
-    if (text.length <= 50) {
-        return text;
-    } else {
-        return text.substr(0, 50) + '...';
-    }
-}
-
 console.log(truncateTextUsingSubstring(sentence));
+
+// Використання методу substr(виправила)
+function truncateTextUsingSubstr(text) {
+    return text.length > 50 ? text.substr(0, 50) + '...' : text;
+}
+
 console.log(truncateTextUsingSubstr(sentence));
