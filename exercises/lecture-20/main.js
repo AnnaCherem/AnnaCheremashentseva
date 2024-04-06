@@ -89,7 +89,7 @@ person1.introduceSelf();
 let person2 = createPerson("Denys");
 person2.introduceSelf();
  
-// Завдання 6
+// Завдання 6 (виправила)
 function Person(name) {
     this.name = name; // Властивість з ім'ям
     this.introduceSelf = function() { // привітання
@@ -101,18 +101,19 @@ function Person(name) {
 let mary = new Person("Mary");
 mary.introduceSelf(); // виклик методу introduceSelf
 
-// Створення екземпляру об'єкта tom
+// Створення ще одного екземпляру об'єкта tom
 let tom = new Person("Tom");
 
 tom.introduceSelf(); // виклик методу introduceSelf
 
 // Перевірка, чи містить об'єкт mary властивість prop
-let hasProp = 'prop' in mary;
+let hasProp = mary.hasOwnProperty('prop');
 
 // Виводить не знайдена в об'єкті mary
-console.log( 'Властивість prop', hasProp ? 'знайдена в об\'єкті mary' : 'не знайдена в об\'єкті mary');
+console.log('Властивість prop', hasProp ? 'знайдена в об\'єкті mary' : 'не знайдена в об\'єкті mary');
 
-console.log( hasProp ) // виводить false
+console.log(hasProp); // виводить false
+
 
 // Завдання 7
 let DirtyMartini = {
