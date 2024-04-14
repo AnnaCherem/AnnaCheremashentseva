@@ -27,14 +27,30 @@ const xhrPromise = (method, url) => {
 
   return promise;
 };
-
+ //Завдання 2
 xhrPromise("GET", url)
-.then(response => {
-    const posts = JSON.parse(response)
-		let result = ''
+  .then(response => {
+    const posts = JSON.parse(response);
+    let result = '';
     posts.forEach(item => {
-        result += template(item)
-    })
+      result += template(item);
+    });
     document.getElementById("blog").innerHTML = result;
-    
-})
+    return xhrPromise("GET", "https://jsonplaceholder.typicode.com/users");
+  })
+  .then(response => {
+    const users = JSON.parse(response);
+    const authors = document.querySelectorAll(".author");
+    authors.forEach(authorElement => {
+      const userId = authorElement.getAttribute("data-id");
+      const user = users.find(user => user.id.toString() === userId);
+      if (user) {
+        authorElement.textContent = user.name;
+      } else {
+        authorElement.textContent = "Unknown";
+      }
+    });
+  })
+  .catch(error => {
+    console.error("Error:", error);
+  });
