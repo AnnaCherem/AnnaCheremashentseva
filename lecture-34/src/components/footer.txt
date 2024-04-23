@@ -1,0 +1,12 @@
+import React from 'react';
+
+function Footer() {
+    return (
+        <footer>
+            {/* Ваш код для футера тут */}
+            Footer
+        </footer>
+    );
+}
+
+export default Footer;

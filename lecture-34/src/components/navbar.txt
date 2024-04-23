@@ -1,0 +1,12 @@
+import React from 'react';
+
+function Navbar() {
+    return (
+        <nav>
+            {/* Ваш код для навігаційної панелі тут */}
+            Navbar
+        </nav>
+    );
+}
+
+export default Navbar;

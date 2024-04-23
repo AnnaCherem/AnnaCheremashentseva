@@ -1,0 +1,241 @@
+/* Стили для мобильных устройств */
+@media (max-width: 767px) {
+    .container {
+        width: 100%; /* Ширина на всю ширину экрана */
+        padding: 10px; /* Пример стилизации */
+    }
+}
+:root {
+    --font-family: "DM Sans", sans-serif;
+}
+
+body {
+    margin: 0; /* Встановлюємо margin: 0, щоб усунути внутрішні відступи */
+    padding: 0; /* Встановлюємо padding: 0, щоб усунути зовнішні відступи */
+    background-color: #191919;
+}
+.container {
+    width: 1440px;
+    height: 5990px;
+
+}
+    .inner-container {
+        display: flex; /* Встановлюємо контейнер як Flexbox */
+        justify-content: space-between; /* Рівномірно розподіляємо елементи по контейнеру */
+        align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+        position: relative;
+        width: 1440px;
+        height: 119px;
+        top: 0px;
+        bottom: 0px;
+    
+    }
+    
+    .third-container  {
+        display: flex; /* Встановлюємо контейнер як Flexbox */
+        justify-content: space-between; /* Рівномірно розподіляємо елементи по контейнеру */
+        align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+        position: relative;
+        width: 1440px;
+        height: 67px;
+        top: 26px;
+        bottom: 26px;
+    }
+    
+    .top-right-container {
+        position: absolute; /* Встановлюємо абсолютне позиціонування */
+        top: 26px,; /* Встановлюємо відступ зверху */
+        right: 50px; /* Встановлюємо відступ справа */
+        left: 987px;
+        bottom: 26px;
+        display: flex; /* Встановлюємо контейнер як Flexbox */
+        align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+        width: 403px;
+        height: 67px;
+    }
+    
+    .Home,
+    .Episodes,
+    .About,
+    .Contact {
+        color: #fff;
+        cursor: pointer; /* Змінюємо курсор при наведенні */
+        margin-right: 20px; /* Додамо правий відступ між посиланнями */
+    }
+    
+    .Home:hover,
+    .Episodes:hover,
+    .About:hover,
+    .Contact:hover {
+    color: green; /* Змінюємо колір тексту при наведенні */
+    }
+    
+    
+    .Home {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 159%;
+    width: 49px;
+    height: 27px;
+    top: 20px,; 
+    right:40px;
+    left: 20px;
+    bottom:20px;
+    }
+    .Episodes {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 159%;
+    width: 75px;
+    height: 27px;
+    top: 20px,; 
+    right:40px;
+    left: 40px;
+    bottom:20px;
+    }
+    .About {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 159%;
+    width: 51px;
+    height: 27px;
+    top: 20px,; 
+    right:40px;
+    left: 40px;
+    bottom:20px;
+    }
+    .Contact {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    width: 68px;
+    height: 27px;
+    top: 20px,; 
+    right:20px;
+    left: 40px;
+    bottom:20px;
+    }
+    .Home:active,
+    .Episodes:active,
+    .About:active,
+    .Contact:active {
+    color:  #118da8;
+    }
+    
+    
+    .vector {
+    width: 159.15px;
+    height: 32.62px;
+    position: absolute;
+    left: 5%; /* Позиція зліва відносно батьківського елемента */
+    top: 5%; /* Позиція зверху відносно батьківського елемента */
+    font-style: normal; /* Встановлюємо звичайний стиль шрифту */
+    font-family: var(--font-family); /* Використовуємо змінну --font-family для шрифту */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 225%;
+    color: white;
+    }
+    
+    .banner-box {
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Забезпечте обрізання зайвого вмісту */
+    border-radius: 20px; /* Згладжуємо кути */
+    background-color: #191919; /* Встановлюємо колір фону для кутів */
+    padding: 20px; /* Додаємо внутрішній відступ */
+    border: 2px solid#191919; /* Додаємо бордер */
+    margin: 20px auto; /* Додаємо зовнішній відступ і автоматичне вирівнювання по горизонталі */
+    width: 1440px;
+    height: 913px;/* Встановлюємо висоту бокса */
+    position: relative; /* Зробимо позиціонування відносно */
+    }
+    .inner-banner {
+        display: flex;
+    align-items: center;
+    width: 1400px;
+    height: 913px;
+    left: 20px;
+    right: 20px;
+    
+    }
+    .nested-banner {
+    display: flex;
+    width: 1300px;
+    height: 873px;
+    right: 50px;
+    left: 50px;
+    top: 40px;
+    bottom: 0.44px;
+    }
+    
+    .image-section {
+    flex: 1; /* Розміщення зображення на лівому боці */
+    width: 650px; /* Встановлюємо ширину банера */
+    height: 873px; /* Встановлюємо висоту банера */
+    position: absolute; /* Забезпечимо абсолютне позиціонування відносно батьківського елемента */
+    top: 40px; /* Встановлюємо відступ зверху */
+    left: 50px; /* Встановлюємо відступ зліва */
+    right: 700px;
+    top: 40px;
+    background: url("path_to_image");
+    overflow: hidden; /* Забезпечте обрізання зайвого вмісту */
+    border-radius: 12px; /* Згладжуємо кути */
+    background-color: #191919; /* Встановлюємо колір фону для кутів */
+ 
+    }
+    
+    .content-section {
+    flex: 1; /* Розміщення контенту на правому боці */
+    }
+    .banner-content {
+       /* position: absolute;
+        top: 50%; /* центрирование по вертикали */
+       /* left: 50%; /* центрирование по горизонтали */
+       /* transform: translate(-50%, -50%); /* сдвиг на 50% от ширины и высоты, чтобы центрировать по центру */
+       /* color: white; /* Колір тексту */
+       /* width: 530px; /* Ширина контейнера з текстом */
+       /* height: 610px; /* Висота контейнера з текстом */
+       /* text-align: center; /* выравнивание текста по центру */
+       margin-left: 710px; /* добавляем отступ слева */
+       margin-right: 60px;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 126%;
+        letter-spacing: 0.05em;
+        width: 530px;
+height: 610px;
+    }   
+
+
+.centered-text-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+font-size: 70px;
+line-height: 126%;
+letter-spacing: 0.05em;
+color: #fff;
+width: 530px;
+height: 610px;
+  }
+  .image-section img {
+    max-width: 100%; /* чтобы изображение не выходило за пределы родительского контейнера */
+}
+
+.text-block {
+font-weight: 400;
+font-size: 75px;
+line-height: 117%;
+letter-spacing: 0.04em;
+color: #fff;
+
+color: white; 
+}
+
+
+
+
+

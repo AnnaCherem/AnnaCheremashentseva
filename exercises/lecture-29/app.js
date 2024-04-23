@@ -26,7 +26,7 @@ class AuthException extends Error {
       showDialog();
     }
   });
-  
+   a
   function showDialog() {
     dialogBoxId.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
