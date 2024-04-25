@@ -1,0 +1,327 @@
+
+:root {
+    --font-family: "DM Sans", sans-serif;
+}
+
+body {
+    font-family: 'DM Sans';
+    font-weight: normal;
+    font-style: normal;
+    margin: 0; /* Встановлюємо margin: 0, щоб усунути внутрішні відступи */
+    padding: 0; /* Встановлюємо padding: 0, щоб усунути зовнішні відступи */
+    background-color: #191919;
+    width: 1440px;
+    height: 5990px;
+
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+    .header{
+      padding: 42px 0;
+    
+    }
+    
+    .row {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+    .logo {
+        display: inline-block; /* Устанавливаем тип блочного элемента */
+        width: 160px; /* Устанавливаем ширину логотипа */
+        height: 33px; /* Устанавливаем высоту логотипа */
+        background-image: url('C:\Users\cerem\OneDrive\Рабочий стол\githab-foulder\castaway\img\Baner.png'); /* Устанавливаем изображение фона */
+        background-size: cover; /* Растягиваем изображение фона, чтобы оно полностью покрыло область */
+        background-repeat: no-repeat; /* Отключаем повторение фона */
+    }
+    .logo svg {
+        width: 159px; /* Устанавливаем ширину SVG */
+        height: 32px; /* Устанавливаем высоту SVG */
+    }
+    
+    .menu ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+   .menu ul li{
+     list-style: none;
+   }
+   .menu ul li a{
+        display: block;
+        color: #fff; 
+        margin-right: 20px;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 159%;
+        
+    }
+    .menu ul li a:hover{
+        color: #118DA8;
+    }
+    
+    
+    .banner-box{
+        background-color: #191919; /* Встановлюємо колір фону для кутів */
+        padding: 20px; /* Додаємо внутрішній відступ */
+    }
+ 
+    .banner-content {
+        max-width: 526px;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 126%;
+        letter-spacing: 0.05em;
+    }   
+
+
+.centered-text-container {
+ 
+    font-weight: 400;
+font-size: 70px;
+line-height: 126%;
+letter-spacing: 0.05em;
+color: #fff;
+  }
+
+
+.text-block {
+font-weight: 400;
+font-size: 75px;
+line-height: 117%;
+letter-spacing: 0.04em;
+color: #fff;
+
+}
+.info_social {
+width: 245px;
+height: 32px;
+}
+.info_social .info_social_child{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 74px;
+    color:#fff;
+    margin-top: 16px;
+    
+}
+ul.info_social_list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+ul.info_social_list li{
+    list-style: none;
+    margin-right: 17px;
+    border-radius: 8px;
+/*width: 289px;
+height: 72px;*/
+}
+ul.info_social_list li a img{
+    transition: all 0.4s ease;
+}
+ul.info_social_list li a img:hover{
+    transform: scale(1.1);
+}
+
+/*Наступна секція*/
+
+
+.episodes-box {
+    background-color: #191919; /* Встановлюємо колір фону для кутів */
+    width: 1440px;
+height: 2088px;
+
+}
+
+.container2 {
+border-radius: 6px;
+width: 1400px;
+height: 2088px;
+
+margin: 0 auto;
+}
+
+.row1 {
+    display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+   width: 1300px;
+height: 99px;
+margin-top: 105px;
+margin-right: 50px;
+margin-left: 50px;
+
+
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 124%;
+    letter-spacing: 0.05em;
+    color: #fff;
+    height: 80px;
+    width: 513px;
+}
+
+.container3 {
+width: 1300px;
+height: 1689px;
+margin-top: 37px;
+margin-right: 50px;
+margin-left: 50px;
+margin-bottom: 159px;
+}
+
+.row2 {
+    
+border-radius: 32px;
+width: 1300px;
+height: 545px;
+background: #000;
+margin-bottom: 60px;
+margin-top: 37px;
+margin-right: 50px;
+margin-left: 00px;
+}
+
+.col-xl-3 {
+    display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+}
+
+.image-section2 {
+    display: block;
+    width: 389px;
+    height: 465px;
+    margin: 0;
+padding: 0;
+background: url("path_to_image");
+}
+
+.image-section2 img {
+    width: 389px;
+height: 465px;
+margin-left: 40px;
+padding: 0;
+border-radius: 6px;
+
+}
+
+.episodes-content {
+    width: 778px;
+height: 465px;
+font-weight: 400;
+font-size: 64px;
+line-height: 110%;
+letter-spacing: 0.04em;
+color: #fff;
+margin-top: 40px;
+margin-right: 40px;
+margin-left: 53px;
+margin-bottom: 40px;
+}
+.info_social2 {
+    width: 73px;
+height: 27px;
+}
+.info_social2.info_social_child2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.wrapper {
+    border-radius: 6px;
+width: 73px;
+height: 27px;
+background: #191919;
+margin-top: 7px;
+margin-right: 705px;
+margin-left: 0px;
+margin-bottom: 430px;
+}
+.info_social2.info_social_child3{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 159%;
+    color: #118da8; 
+}
+.episodes-title {
+    font-weight: 400;
+font-size: 64px;
+line-height: 110%;
+letter-spacing: 0.04em;
+color: #fff;
+margin-top: 168px;
+margin-right: 120px;
+margin-left: 480px;
+margin-bottom: 236px;
+width: 600px;
+height: 160px;
+}
+.episode-title2 {
+font-weight: 400;
+font-size: 22px;
+line-height: 150%;
+color: rgba(255, 255, 255, 0.7);
+}
+.info_social3{
+    border-radius: 6px;
+width: 136px;
+height: 27px;
+background: #191919;
+}
+
+.info_social3.info_social_child4{
+    font-weight: 400;
+font-size: 17px;
+line-height: 159%;
+color: #fff;}
+
+.wrapper2 {
+    font-weight: 400;
+font-size: 17px;
+line-height: 159%;
+color: #fff;
+width: 104px;
+height: 27px;
+}
+.row3 {
+    background-color: #000; /* Встановлюємо колір фону для кутів */
+    border-radius: 32px;
+}
+
+
+
+/*секция 3*/
+.containers-section{
+width: 1440px;
+height: 1530px;
+}
+.container .container {
+    width: 1440px;
+height: 943px;
+}
+.container .banner {
+    width: 1300px;
+height: 743px;
+}
