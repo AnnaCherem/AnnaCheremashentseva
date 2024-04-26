@@ -1,4 +1,6 @@
 
+
+
 :root {
     --font-family: "DM Sans", sans-serif;
 }
@@ -128,8 +130,6 @@ ul.info_social_list li{
     list-style: none;
     margin-right: 17px;
     border-radius: 8px;
-/*width: 289px;
-height: 72px;*/
 }
 ul.info_social_list li a img{
     transition: all 0.4s ease;
@@ -143,185 +143,379 @@ ul.info_social_list li a img:hover{
 
 .episodes-box {
     background-color: #191919; /* Встановлюємо колір фону для кутів */
-    width: 1440px;
-height: 2088px;
-
-}
-
-.container2 {
-border-radius: 6px;
-width: 1400px;
-height: 2088px;
-
-margin: 0 auto;
-}
-
-.row1 {
-    display: flex; 
-        justify-content: space-between; 
-        align-items: center;
-   width: 1300px;
-height: 99px;
-margin-top: 105px;
-margin-right: 50px;
-margin-left: 50px;
-
-
+  padding-top: 93px;
+  padding-bottom: 160px;
 }
 
 
-h1 {
+.btn_episodes{
+    width: 178px;
+    height: 51px;
+    background: #118da8;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
+.btn_view:hover,
+.btn_episodes:hover{
+   background: #269db7;
+}
+.episodes-box h1 {
+    margin: 0;
     font-weight: 400;
     font-size: 64px;
     line-height: 124%;
     letter-spacing: 0.05em;
-    color: #fff;
-    height: 80px;
-    width: 513px;
+    color: #fff;  
+
 }
 
-.container3 {
-width: 1300px;
-height: 1689px;
-margin-top: 37px;
-margin-right: 50px;
-margin-left: 50px;
-margin-bottom: 159px;
+.haed-episodes{
+    margin-bottom: 40px;
 }
-
-.row2 {
-    
-border-radius: 32px;
-width: 1300px;
-height: 545px;
-background: #000;
-margin-bottom: 60px;
-margin-top: 37px;
-margin-right: 50px;
-margin-left: 00px;
-}
-
-.col-xl-3 {
-    display: flex; 
-        justify-content: space-between; 
-        align-items: center;
+.block-section-episodes{
+    padding: 40px;
+    background: #000;
+    border-radius: 32px;
+    margin-bottom: 60px;
+    align-items: flex-start;
 }
 
 .image-section2 {
-    display: block;
-    width: 389px;
-    height: 465px;
-    margin: 0;
-padding: 0;
-background: url("path_to_image");
+    max-width: 389px;
+    margin-right: 53px;
 }
 
 .image-section2 img {
-    width: 389px;
-height: 465px;
-margin-left: 40px;
-padding: 0;
-border-radius: 6px;
-
+    width: 100%;
+    height: 465px;
+    padding: 0;
+    border-radius: 6px;
 }
 
 .episodes-content {
-    width: 778px;
-height: 465px;
-font-weight: 400;
-font-size: 64px;
-line-height: 110%;
-letter-spacing: 0.04em;
-color: #fff;
-margin-top: 40px;
-margin-right: 40px;
-margin-left: 53px;
-margin-bottom: 40px;
+    max-width: 778px;
 }
-.info_social2 {
-    width: 73px;
-height: 27px;
-}
-.info_social2.info_social_child2 {
+
+.info_social_child2 {
+    background: #191919;
+    border-radius: 6px;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: #fff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-bottom: 48px;
 }
 
-.wrapper {
-    border-radius: 6px;
-width: 73px;
-height: 27px;
-background: #191919;
-margin-top: 7px;
-margin-right: 705px;
-margin-left: 0px;
-margin-bottom: 430px;
-}
-.info_social2.info_social_child3{
+.info_social_child3{
     font-weight: 400;
     font-size: 17px;
     line-height: 159%;
     color: #118da8; 
+    margin-bottom: 18px;
 }
-.episodes-title {
+.episode-title{
     font-weight: 400;
-font-size: 64px;
-line-height: 110%;
-letter-spacing: 0.04em;
-color: #fff;
-margin-top: 168px;
-margin-right: 120px;
-margin-left: 480px;
-margin-bottom: 236px;
-width: 600px;
-height: 160px;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 28px;
 }
-.episode-title2 {
-font-weight: 400;
-font-size: 22px;
-line-height: 150%;
-color: rgba(255, 255, 255, 0.7);
+.episode-paragraf{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 18px;
 }
 .info_social3{
     border-radius: 6px;
-width: 136px;
-height: 27px;
-background: #191919;
+    width: 136px;
+    height: 27px;
+    background: #191919;
+}
+.btn_view{
+    width: 208px;
+    height: 51px;
+    background: #118da8;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 51px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
-.info_social3.info_social_child4{
-    font-weight: 400;
-font-size: 17px;
-line-height: 159%;
-color: #fff;}
-
-.wrapper2 {
-    font-weight: 400;
-font-size: 17px;
-line-height: 159%;
-color: #fff;
-width: 104px;
-height: 27px;
-}
-.row3 {
-    background-color: #000; /* Встановлюємо колір фону для кутів */
-    border-radius: 32px;
-}
 
 
 
 /*секция 3*/
-.containers-section{
-width: 1440px;
-height: 1530px;
+.about{
+    padding: 100px 0;
 }
-.container .container {
-    width: 1440px;
-height: 943px;
+.about_information{
+ width: 50%;
+ padding-right: 80px;
 }
-.container .banner {
+.about_images{
+    width: 50%;
+}
+.btn_svg{
+    border-radius: 400px;
+    width: 112px;
+    height: 112px;
+    background: #118da8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn_svg:hover{
+    background: #269db7;
+}
+.about_btn_meet{
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #118da8;
+}
+.about_information h2{
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 122%;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin-bottom: 28px;
+    margin-top: 0;
+}
+.about_information p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 33px;
+}
+
+
+.row_subscribe {
+    border-radius: 32px;
     width: 1300px;
-height: 743px;
+    height: 387px;
+    margin: 100px 50px; /* Верх и низ - 100px, Лево и право - 50px */
+    background-color: #000; 
 }
+.title_email ,h2{
+    font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: #118da8;
+margin-top: 60px;
+margin-left: 60px;
+margin-right: 0px;
+}
+.title_email ,h3{
+font-weight: 400;
+font-size: 72px;
+line-height: 110%;
+letter-spacing: 0.04em;
+color: #fff;
+width: 431px;
+height: 100px;
+}
+
+.form_input {
+    display: block; /* Устанавливаем элементы в блоки */
+    width: 100%; /* Занимаем всю доступную ширину */
+    margin-bottom: 10px; /* Добавляем немного отступа между элементами */
+    width: 522px;
+height: 252px;
+margin-left: 618px;
+margin-top: 0px;
+margin-right: 60px;
+}
+.form_input_name input[type="name"] {
+    border: 1px solid #191919;
+    border-radius: 6px;
+    width: 522px;
+    height: 82px; 
+    background: #191919;
+    margin-top: 0px;
+    margin-right: 60px;
+}
+.form_input_name input[type="name"][placeholder="Name"] {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form_input_email input[type="email"] {
+    border: 1px solid #191919;
+    border-radius: 6px;
+    width: 522px;
+    height: 82px; 
+    background: #191919;
+    margin-top: 60px;
+    margin-right: 60px;
+}
+
+.form_input_email input[type="email"][placeholder="Email"] {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.7);
+}
+    
+.btn_submit {
+    border-radius: 6px;
+width: 87px;
+height: 48px;
+background: #118da8;
+font-weight: 700;
+font-size: 15px;
+line-height: 192%;
+color: rgba(255, 255, 255, 0.7);
+}
+
+/*cекція 4*/
+.container_review {
+    width: 1300px;
+    height: 701px;
+    display: flex;
+    justify-content: space-between; /* Организуем блоки по ширине */
+    flex-direction: column; /* Организуем блоки в столбец */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+.row_review {
+    display: flex; /* Располагаем блоки внутри строки */
+}
+.block_review1,
+ .block_review2,
+ .block_review3,
+ .block_review4,
+ .block_review5,
+ .block_review6 {
+    flex: 1;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 32px;
+width: 423px;
+height: 321px;
+background: #000;
+}
+.svg {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 17px;
+    height: 18px;
+}
+.review_text1 p {
+    font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+color: rgba(255, 255, 255, 0.7);
+}
+.review_text1 h5 {
+    font-weight: 400;
+font-size: 36px;
+line-height: 120%;
+color: #fff;
+width: 313px;
+height: 130px;
+margin-top: 20px;
+margin-left: 50px;
+}
+.container_footer {
+    width: 1400px;
+height: 438px;
+}
+.row_footer {
+    display: flex;
+    width: 1300px;
+height: 238px;
+}
+.vector_and_social {
+width: 447px;
+height: 222px;
+}
+.vector2{
+    width: 224px;
+    height: 46px;
+}
+.social_links {
+    width: 447px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    stroke-width: 2px;
+stroke: #fff;
+}
+
+.social_link svg {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.list-connect {
+    width: 178px;
+height: 222px;
+    padding: 20px; /* Внутренний отступ */
+
+
+  }
+
+  .list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  .list-item {
+    font-weight: 400;
+font-size: 17px;
+line-height: 159%;
+color: #fff;
+    padding: 8px 0; /* Отступ сверху и снизу */
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+  }
+
+  /* Стили для ссылок */
+  .list-item a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет текста */
+  }
+
+  .list-item a:hover {
+    color:white; /* Цвет текста при наведении */
+  }
+  .list-connect2{
+    width: 178px;
+height: 222px;
+  }
+  .social-media{
+    width: 447px;
+height: 32px;
+    display: flex; /* Добавляем flex-контейнер */
+    justify-content: center; /* Выравниваем по горизонтали */
+}
+  
