@@ -1,13 +1,16 @@
-import React, { cimport React, { useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import PostContext from '../contexts/PostContext';
 import Layout from './Layout';
 import Header from './Header';
 import PostTitle from './PostTitle';
 import PostMain from './PostMain';
 
-const Post = () => {
-  // Отримання даних про пост з контексту
-  const post = useContext(PostContext);
+const Post = ({ postData }) => {
+  const [post, setPost] = useState(postData);
+
+  useEffect(() => {
+    setPost(postData);
+  }, [postData]);
 
   return (
     <PostContext.Provider value={post}>
